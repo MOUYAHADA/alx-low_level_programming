@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+/**
+ * main - print the size of each variable to the screen
+ *
+ * Return: 0
+ */
+
 int main(void)
 {
 	int IMANINT;
@@ -7,6 +13,16 @@ int main(void)
 	long long int IMLONGLONGINT;
 	char IMACHAR;
 	float IMFLOAT;
-	printf("Size of a char: %zu byte(s)\nSize of an int: %zu byte(s)\nSize of a long int: %zu byte(s)\nSize of a long long int: %zu byte(s)\nSize of a float: %zu byte(s)\n",sizeof(IMACHAR), sizeof(IMANINT), sizeof(IMLONGINT), sizeof(IMLONGLONGINT), sizeof(IMFLOAT))
-	return(0);
+
+	printf("Size of a char: %zu byte(s)\n"
+			"Size of an int: %zu byte(s)\n"
+			"Size of a long int: %zu byte(s)\n"
+			"Size of a long long int: %zu byte(s)\n"
+			"Size of a float: %zu byte(s)\n",
+			sizeof(IMACHAR),
+			sizeof(IMANINT),
+			sizeof(IMLONGINT),
+			sizeof(IMLONGLONGINT),
+			sizeof(IMFLOAT));
+	return (0);
 }

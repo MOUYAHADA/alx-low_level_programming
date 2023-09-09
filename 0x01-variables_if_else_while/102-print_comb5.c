@@ -16,9 +16,8 @@ int main(void)
 		{
 			for (v = i; v <= 9; v++)
 			{
-				for (y = (i == v) ? x + 1: 48; y <= 9; y++)
+				for (y = (i == v) ? x + 1 : 48; y <= 9; y++)
 				{
-					(y + x + v + i == 0) ? y = 1: ; 
 					putchar(i + 48);
 					putchar(x + 48);
 					putchar(32);

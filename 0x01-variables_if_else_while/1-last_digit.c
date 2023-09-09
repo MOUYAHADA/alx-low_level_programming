@@ -20,15 +20,15 @@ int main(void)
 
 	if (x > 5)
 	{
-		printf(" is greater than 5");
+		printf(" is greater than 5\n");
 	}
 	else if (x < 6 && x != 0)
 	{
-		printf(" is less than 6 and not 0");
+		printf(" is less than 6 and not 0\n");
 	}
 	else if (x == 0)
 	{
-		printf(" is zero");
+		printf(" is zero\n");
 	}
 
 	return (0);

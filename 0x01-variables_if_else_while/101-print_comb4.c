@@ -12,14 +12,14 @@ int main(void)
 
 	for (i = 48; i < 58; i++)
 	{
-		for (x = 48; x < 58; x++)
+		for (x = i + 1; x < 58; x++)
 		{
-			for (v = 48; v < 58; v++)
+			for (v = x + 1; v < 58; v++)
 			{
 				putchar(i);
 				putchar(x);
 				putchar(v);
-				if (i == 57 && x == 57 && v == 57)
+				if (i == 55 && x == 56 && v == 57)
 				{
 					break;
 				}

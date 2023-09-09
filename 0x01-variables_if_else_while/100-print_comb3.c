@@ -16,7 +16,7 @@ int main(void)
 		{
 			putchar(i);
 			putchar(x);
-			if (i > 56)
+			if (i + 1 > 56)
 			{
 				break;
 			}

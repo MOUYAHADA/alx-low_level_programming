@@ -10,20 +10,20 @@ int main(void)
 {
 	int i, x, v, y;
 
-	for (i = 48; i < 58; i++)
+	for (i = 0; i <= 9; i++)
 	{
-		for (x = 48; x < 58; x++)
+		for (x = 0; x <= 9; x++)
 		{
-			for (v = 48; v < 58; v++)
+			for (v = i; v <= 9; v++)
 			{
-				for (y = 48; y < 58; y++)
+				for (y = (x == 0) ? x : x + 1; y <= 9; y++)
 				{
-					putchar(i);
-					putchar(x);
-					putchar(44);
-					putchar(v);
-					putchar(y);
-					if (i == 57 && x == 57 && v == 57 && y == 57)
+					putchar(i + 48);
+					putchar(x + 48);
+					putchar(32);
+					putchar(v + 48);
+					putchar(y + 48);
+					if (i == 9 && x == 8 && v == 9 && y == 9)
 					{
 						break;
 					}

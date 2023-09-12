@@ -1,6 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+#include <stdio.h>
+
 /**
  * put_chars - function prints the string `_putchar` to the screen
  * with the help of the function putchar

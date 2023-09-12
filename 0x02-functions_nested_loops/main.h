@@ -5,7 +5,7 @@
 
 /**
  * _putchar - print "_puthcar" to the screen
- *
+ * @c: character to print
  * Return: 0
  */
 

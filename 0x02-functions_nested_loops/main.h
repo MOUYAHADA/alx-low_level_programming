@@ -18,4 +18,21 @@ int put_chars(void)
 	return (0);
 }
 
+/**
+ * print_alphabet - print alphabet
+ *
+ * Return: 0
+ */
+
+int print_alphabet(void)
+{
+	int i;
+
+	for (i = 97; i < 123; i++)
+	{
+		putchar(i);
+	}
+	putchar(i);
+	return (0);
+}
 #endif

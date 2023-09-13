@@ -17,7 +17,7 @@ int main(void)
  * with the help of the function putchar
  * Return: 0
  */
-int put_chars(void)
+void put_chars(void)
 {
 	int i[8] = {95, 112, 117, 116, 99, 104, 97, 114}, x = 0;
 
@@ -26,5 +26,4 @@ int put_chars(void)
 		_putchar(i[x]);
 	}
 	_putchar(10);
-	return (0);
 }

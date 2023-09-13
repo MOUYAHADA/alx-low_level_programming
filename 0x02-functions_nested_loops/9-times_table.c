@@ -15,26 +15,25 @@ void times_table(void)
 		for (x = 0; x < 10; x++)
 		{
 			times = i * x;
-			if (times > 10)
+			if (times >= 10)
 			{
-				_putchar(48 + (times / 10));
-				_putchar(48 + (times % 10));
-				if (i != 9)
+				if (x != 0)
 				{
 					_putchar(44);
 					_putchar(32);
 				}
+				_putchar(48 + (times / 10));
+				_putchar(48 + (times % 10));
 			}
 			else
 			{
-				_putchar(48 + times);
-				if (i != 9)
+				if (x != 0)
 				{
 					_putchar(44);
 					_putchar(32);
 					_putchar(32);
-					_putchar(32);
 				}
+				_putchar(48 + times);
 			}
 		}
 		_putchar(10);

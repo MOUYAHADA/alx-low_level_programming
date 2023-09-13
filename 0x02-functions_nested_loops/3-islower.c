@@ -7,7 +7,7 @@
  * Return: 1 lowercase, 0 = not lowercase
  */
 
-int _islower(char c)
+int _islower(int c)
 {
-	return (islower(ch) ? 1 : 0);
+	return (islower((char)c) ? 1 : 0);
 }

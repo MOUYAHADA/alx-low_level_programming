@@ -1,17 +1,16 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
- * _naturals - get the sum of all the natural numbers below n
- * @n: given number
+ * main - get the sum of all the natural numbers below n
+ *
  * Return: 0;
  */
 
-void _naturals(int n)
+int main(void)
 {
 	int i, sum = 0;
 
-	for (i = 0; i < n; i++)
+	for (i = 0; i < 1024; i++)
 	{
 		if (i % 3 == 0 || i % 5 == 0)
 		{
@@ -19,4 +18,5 @@ void _naturals(int n)
 		}
 	}
 	printf("%d\n", sum);
+	return (0);
 }

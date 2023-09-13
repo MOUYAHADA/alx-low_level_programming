@@ -14,15 +14,18 @@ void print_to_98(int n)
 	{
 		if (i < 10)
 		{
-			_putchar('0' + i);
+			_putchar(48 + i);
 		}
 		else
 		{
 			_putchar(48 + (i / 10));
 			_putchar(48 + (i % 10));
 		}
+		if (i < 98)
+		{
 		_putchar(44);
 		_putchar(32);
+		}
 	}
 	_putchar(10);
 }

@@ -19,13 +19,16 @@ void times_table(void)
 			{
 				_putchar(48 + (times / 10));
 				_putchar(48 + (times % 10));
+				_putchar(44);
+				_putchar(32);
 			}
 			else
 			{
 				_putchar(48 + times);
+				_putchar(44);
+				_putchar(32);
+				_putchar(32);
 			}
-			_putchar(44);
-			_putchar(32);
 		}
 		_putchar(10);
 	}

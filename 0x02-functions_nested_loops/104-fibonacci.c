@@ -8,36 +8,38 @@
 
 int main(void)
 {
-	unsigned long int i, a, b, ap1, ap2, bp1, bp2;
+	int main(void)
+{
+    unsigned long int x, p, t, p1, p2, t1, t2;
 
-	a = 1;
-	b = 2;
+    p = 1;
+    t = 2;
 
-	printf("%lu", a);
+    printf("%lu", p);
 
-	for (i = 1; i < 91; i++)
-	{
-		printf(", %lu", b);
-		b = b + a;
-		a = b - a;
-	}
+    for (x = 1; x < 91; x++)
+    {
+        printf(", %lu", t);
+        t = t + p;
+        p = t - p;
+    }
 
-	ap1 = a / 1000000000;
-	ap2 = a % 1000000000;
-	bp1 = b / 1000000000;
-	bp2 = b % 1000000000;
+    p1 = p / 1000000000;
+    p2 = p % 1000000000;
+    t1 = t / 1000000000;
+    t2 = t % 1000000000;
 
-	for (i = 92; i < 99; ++i)
-	{
-		printf(", %lu", ap1 + (bp2 / 1000000000));
-		printf("%lu", bp2 % 1000000000);
-		ap1 = ap1 + bp1;
-		bp1 = ap1 - bp1;
-		bp2 = bp2 + ap2;
-		ap2 = bp2 - ap2;
-	}
+    for (x = 92; x < 99; ++x)
+    {
+        printf(", %lu", t1 + (t2 / 1000000000));
+        printf("%lu", t2 % 1000000000);
+        t1 = t1 + p1;
+        p1 = t1 - p1;
+        t2 = t2 + p2;
+        p2 = t2 - p2;
+    }
 
-	printf("\n");
-	return (0);
-}
+    printf("\n");
 
+    return (0);
+}}

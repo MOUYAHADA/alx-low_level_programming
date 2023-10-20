@@ -15,7 +15,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	list_t *new_node;
 	unsigned int len;
 
-	if (!strCopy)
+	if (!strCopy || !head)
 	{
 		free(strCopy);
 		return (NULL);

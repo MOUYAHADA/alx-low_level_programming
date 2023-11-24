@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * free_grid - frees all allocated memory in this file
+ * _free_grid - frees all allocated memory in this file
  *
  * @grid: pointer to grid
  *
@@ -9,7 +9,7 @@
  *
  */
 
-void free_grid(int **grid, int  height)
+void _free_grid(int **grid, int  height)
 {
 	int i;
 
@@ -46,7 +46,7 @@ int **alloc_grid(int width, int height)
 		grid[i] = malloc(sizeof(int) * width);
 		if (!grid[i])
 		{
-			free_grid(grid, i);
+			_free_grid(grid, i);
 			return (NULL);
 		}
 

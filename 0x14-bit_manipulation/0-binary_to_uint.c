@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * _pow - calculates the power of a number
  *
@@ -12,19 +12,15 @@
 
 int _pow(int a, int b)
 {
-	int power, i;
+	int result = 1;
 
 	if (b == 0)
 		return (1);
 
-	if (b == 1)
-		return (a);
+	for (; b > 0; b--)
+		result *= a;
 
-	power = 0;
-	for (i = 0; i < b; i++)
-		power += a * a;
-
-	return (power);
+	return (result);
 }
 
 /**
@@ -37,11 +33,7 @@ int _pow(int a, int b)
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int decimal, str_length, i;
-
-	decimal = 0;
-	str_length = 0;
-	i = 0;
+	unsigned int decimal = 0, str_length = 0, i = 0;
 
 	if (!b)
 		return (0);
@@ -57,12 +49,11 @@ unsigned int binary_to_uint(const char *b)
 	{
 		str_length--;
 		if (b[str_length] == '1')
+		{
 			decimal += _pow(2, i);
+		}
 		i++;
 	}
 
-
 	return (decimal);
 }
-
-
